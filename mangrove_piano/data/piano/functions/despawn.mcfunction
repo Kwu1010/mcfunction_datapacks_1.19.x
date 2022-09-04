@@ -1,0 +1,3 @@
+execute as @e[type=armor_stand,tag=piano,tag=destroy] at @s unless entity @s[nbt={HandItems:[{id:"minecraft:stick",tag:{display:{Name:"\"Null\""}}}]}] run fill ~4 ~2 ~ ~ ~ ~-1 air destroy
+execute as @e[type=armor_stand,tag=piano,tag=destroy] at @s unless entity @s[nbt={HandItems:[{id:"minecraft:stick",tag:{display:{Name:"\"Null\""}}}]}] run kill @e[tag=piano,distance=..4]
+execute as @e[tag=piano] at @s if block ~ ~0.5 ~ air run kill @s

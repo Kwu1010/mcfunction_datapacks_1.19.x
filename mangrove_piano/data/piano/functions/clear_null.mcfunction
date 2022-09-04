@@ -1,0 +1,1 @@
+clear @a minecraft:stick{display:{Name:"\"Null\""}}
