@@ -1,3 +1,16 @@
+#####################################################################################################################################################
+#
+# Chime instrument module for the mangrove piano
+#
+# Function activation condition(s):
+#	If a piano key has the chime tag AND is pressed
+#
+# If a piano key with the chime tag is pressed:
+#	Play corresponding sound
+#	Replace item in key armor stand hand to re-enable the key
+#
+#####################################################################################################################################################
+
 execute as @e[type=armor_stand,tag=piano,tag=chime,tag=g] at @s unless entity @s[nbt={HandItems:[{id:"minecraft:stick",tag:{display:{Name:"\"Null\""}}}]}] run playsound minecraft:block.note_block.chime master @a ~ ~ ~ 1 0.53
 execute as @e[type=armor_stand,tag=piano,tag=chime,tag=a] at @s unless entity @s[nbt={HandItems:[{id:"minecraft:stick",tag:{display:{Name:"\"Null\""}}}]}] run playsound minecraft:block.note_block.chime master @a ~ ~ ~ 1 0.595
 execute as @e[type=armor_stand,tag=piano,tag=chime,tag=b] at @s unless entity @s[nbt={HandItems:[{id:"minecraft:stick",tag:{display:{Name:"\"Null\""}}}]}] run playsound minecraft:block.note_block.chime master @a ~ ~ ~ 1 0.667

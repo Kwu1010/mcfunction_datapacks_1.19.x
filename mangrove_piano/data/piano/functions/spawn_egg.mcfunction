@@ -1,3 +1,15 @@
+#####################################################################################################################################################
+#
+# Mangrove piano spawn egg, places piano structure, overwrites existing structures
+#
+# Function activation condition(s):
+#	A mangrove piano spawn egg is placed
+#
+# If a mangrove piano spawn egg is placed:
+#	Create piano structure and spawn piano keys
+#
+#####################################################################################################################################################
+
 execute as @e[type=endermite,name="Piano Spawn Egg"] at @s run setblock ~-1 ~ ~1 minecraft:quartz_slab[type=top]
 execute as @e[type=endermite,name="Piano Spawn Egg"] at @s run setblock ~ ~ ~1 minecraft:quartz_slab[type=top]
 execute as @e[type=endermite,name="Piano Spawn Egg"] at @s run setblock ~1 ~ ~1 minecraft:quartz_slab[type=top]

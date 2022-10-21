@@ -1,3 +1,16 @@
+#####################################################################################################################################################
+#
+# Bit instrument module for the mangrove piano
+#
+# Function activation condition(s):
+#	If a piano key has the bit tag AND is pressed
+#
+# If a piano key with the bit tag is pressed:
+#	Play corresponding sound
+#	Replace item in key armor stand hand to re-enable the key
+#
+#####################################################################################################################################################
+
 execute as @e[type=armor_stand,tag=piano,tag=bit,tag=g] at @s unless entity @s[nbt={HandItems:[{id:"minecraft:stick",tag:{display:{Name:"\"Null\""}}}]}] run playsound minecraft:block.note_block.bit master @a ~ ~ ~ 1 0.53
 execute as @e[type=armor_stand,tag=piano,tag=bit,tag=a] at @s unless entity @s[nbt={HandItems:[{id:"minecraft:stick",tag:{display:{Name:"\"Null\""}}}]}] run playsound minecraft:block.note_block.bit master @a ~ ~ ~ 1 0.595
 execute as @e[type=armor_stand,tag=piano,tag=bit,tag=b] at @s unless entity @s[nbt={HandItems:[{id:"minecraft:stick",tag:{display:{Name:"\"Null\""}}}]}] run playsound minecraft:block.note_block.bit master @a ~ ~ ~ 1 0.667

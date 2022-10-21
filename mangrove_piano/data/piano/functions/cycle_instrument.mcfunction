@@ -1,3 +1,18 @@
+#####################################################################################################################################################
+#
+# Change instruments on the piano
+#
+# Function activation condition(s):
+#	If the change instrument key on the piano is pressed
+#
+# If the change instrument key is pressed:
+#	Cycle instrument in the order harp -> iron xylophone -> bit -> chime -> harp, changing 1 instrument in the cycle per click
+# 	Piano keys play the instrument corresponding to the current instrument tag
+#	Add the tag of the next instrument in the cycle as current tag, then remove the previous tag
+#	Replace item in change instrument key armor stand hand to re-enable the key
+#
+#####################################################################################################################################################
+
 execute as @e[type=armor_stand,tag=piano,tag=instrument,tag=bit] at @s unless entity @s[nbt={HandItems:[{id:"minecraft:stick",tag:{display:{Name:"\"Null\""}}}]}] run tag @e[tag=bit,distance=..4] add add_chime
 execute as @e[type=armor_stand,tag=piano,tag=instrument,tag=chime] at @s unless entity @s[nbt={HandItems:[{id:"minecraft:stick",tag:{display:{Name:"\"Null\""}}}]}] run tag @e[tag=chime,distance=..4] add add_harp
 execute as @e[type=armor_stand,tag=piano,tag=instrument,tag=harp] at @s unless entity @s[nbt={HandItems:[{id:"minecraft:stick",tag:{display:{Name:"\"Null\""}}}]}] run tag @e[tag=harp,distance=..4] add add_iron_xylophone

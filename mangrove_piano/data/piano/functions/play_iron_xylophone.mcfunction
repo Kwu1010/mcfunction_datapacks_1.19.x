@@ -1,3 +1,16 @@
+#####################################################################################################################################################
+#
+# Iron xylophone instrument module for the mangrove piano
+#
+# Function activation condition(s):
+#	If a piano key has the iron_xylophone tag AND is pressed
+#
+# If a piano key with the iron_xylophone tag is pressed:
+#	Play corresponding sound
+#	Replace item in key armor stand hand to re-enable the key
+#
+#####################################################################################################################################################
+
 execute as @e[type=armor_stand,tag=piano,tag=iron_xylophone,tag=g] at @s unless entity @s[nbt={HandItems:[{id:"minecraft:stick",tag:{display:{Name:"\"Null\""}}}]}] run playsound minecraft:block.note_block.iron_xylophone master @a ~ ~ ~ 1 0.53
 execute as @e[type=armor_stand,tag=piano,tag=iron_xylophone,tag=a] at @s unless entity @s[nbt={HandItems:[{id:"minecraft:stick",tag:{display:{Name:"\"Null\""}}}]}] run playsound minecraft:block.note_block.iron_xylophone master @a ~ ~ ~ 1 0.595
 execute as @e[type=armor_stand,tag=piano,tag=iron_xylophone,tag=b] at @s unless entity @s[nbt={HandItems:[{id:"minecraft:stick",tag:{display:{Name:"\"Null\""}}}]}] run playsound minecraft:block.note_block.iron_xylophone master @a ~ ~ ~ 1 0.667
