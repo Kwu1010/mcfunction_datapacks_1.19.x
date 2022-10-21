@@ -1,4 +1,5 @@
 #####################################################################################################################################################
+# 
 # Create a chunk loader object, consisting of an chunk loader armor stand and corresponding textured block
 #
 # Function activation condition(s):
@@ -8,6 +9,7 @@
 #	Create a block with the chunk loader texture (full petrified oak slab replaced in a custom texturepack)
 #	Summon an armor_stand with the chunk loader tags
 #	Remove the silverfish used to create the chunk loader object
+#
 #####################################################################################################################################################
 
 execute as @e[type=silverfish,name="Chunk Loader"] at @s run setblock ~ ~ ~ minecraft:petrified_oak_slab[type=double]

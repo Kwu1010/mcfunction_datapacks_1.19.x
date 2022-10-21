@@ -1,4 +1,5 @@
 #####################################################################################################################################################
+#
 # Chunk loader destruction sequence
 #
 # Function activation condition(s):
@@ -9,6 +10,7 @@
 #	Remove any chunk loader texture block item drops
 #	Remove the chunk loader armor stand
 #	Drop the chunk loader spawn egg
+#
 #####################################################################################################################################################
 
 execute as @e[type=armor_stand,tag=loader] at @s unless block ~ ~ ~ minecraft:petrified_oak_slab[type=double] run forceload remove ~ ~

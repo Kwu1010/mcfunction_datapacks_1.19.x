@@ -1,4 +1,5 @@
 #####################################################################################################################################################
+#
 # Custom crafting recipe for the chunk loader
 #
 # Function activation condition(s):
@@ -8,6 +9,7 @@
 # 	Revoke chunk loader recipe
 #	Revoke chunk loader advancement
 # 	Replace crafted knowledge book placeholder with a chunk loader spawn egg
+#
 #####################################################################################################################################################
 
 recipe take @s loader:loader
