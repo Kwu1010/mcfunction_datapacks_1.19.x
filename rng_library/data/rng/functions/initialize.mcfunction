@@ -27,7 +27,7 @@ scoreboard objectives add rng_range dummy
 scoreboard objectives add rng_seed dummy			
 
 # stores the random number
-scoreboard objectives add rng dummy					
+scoreboard objectives add rng dummy				
 
 
 
